@@ -12,7 +12,6 @@ def uri(host,parameters):
         baseUri = "https://"+ host + parameters
         return baseUri
 
-#Hostname before change
 baseUri=uri(host,"/restconf/data/Cisco-IOS-XE-native:native")
 getdata = requests.get(baseUri, auth=authdata, verify=False)
 data=(xmltodict.parse(getdata.content))
