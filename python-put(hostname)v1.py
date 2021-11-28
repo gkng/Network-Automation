@@ -5,7 +5,6 @@ import urllib3, xmltodict
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 host="192.168.0.100"
-
 authdata=('admin','cisco123')
 headers = {'Accept': 'application/yang-data+json','Content-Type':'application/yang-data+json'}
 
