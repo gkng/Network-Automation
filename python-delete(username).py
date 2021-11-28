@@ -14,7 +14,6 @@ def uri(host,parameters,username):
 
 username = input ("Enter user to delete:")
 
-#baseUri=uri(host,"/restconf/data/Cisco-IOS-XE-native:native/username=" + username)
 baseUri=uri(host,"/restconf/data/Cisco-IOS-XE-native:native/username=",username)
 print(baseUri)
 
