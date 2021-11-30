@@ -30,5 +30,5 @@ baseUri=uri(host,"/restconf/data/ietf-interfaces:interfaces/interface=") + intfn
 getdata = requests.request("GET", baseUri, headers=headers, auth=authdata, verify=False)
 jdata=json.loads(getdata.text)
 #print (json.dumps(jdata , indent=4))
-print ("Interface 'Enabled' Status: ")
+print (f"Interface {intfname} 'Enabled' Status: ")
 print (jdata["ietf-interfaces:interface"]["enabled"])
